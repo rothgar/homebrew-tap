@@ -27,8 +27,4 @@ class K < Formula
   def install
     bin.install "k"
   end
-
-  test do
-    system "#{bin}/k"
-  end
 end
