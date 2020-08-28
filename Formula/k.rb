@@ -25,6 +25,6 @@ class K < Formula
   depends_on "kubectl"
 
   def install
-    bin.install "k"
+    bin.install "bin/k"
   end
 end
