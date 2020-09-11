@@ -2,21 +2,21 @@
 class K < Formula
   desc "Experimental kubectl wrapper"
   homepage "https://github.com/rothgar/k"
-  version "0.1.1"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/rothgar/k/releases/download/0.1.1/k_0.1.1_Darwin_x86_64.tar.gz"
-    sha256 "3b46e3879c64be6511a0e665a571961c9871b0a5d064b74a8c3b722adc245838"
+    url "https://github.com/rothgar/k/releases/download/0.2.0/k_0.2.0_Darwin_x86_64.tar.gz"
+    sha256 "ef2c40976a1cc1e105b3587e11a8141b7075c8a60d50a7d158ef7a1b08f63ed1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/rothgar/k/releases/download/0.1.1/k_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "2126f94e8b588d1a1629471049f5b8e2a3bd7a378fcb230e790bc158833a60cb"
+      url "https://github.com/rothgar/k/releases/download/0.2.0/k_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "02b69b107dec9de7574443d01614352f9e64075d371fd7674580d82d02f77698"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rothgar/k/releases/download/0.1.1/k_0.1.1_Linux_arm64.tar.gz"
-        sha256 "72f9960edea0dce40a739969b3a7938e5a8c6ab1bb060262b60ac5eff2309096"
+        url "https://github.com/rothgar/k/releases/download/0.2.0/k_0.2.0_Linux_arm64.tar.gz"
+        sha256 "bbbe7cceb61b5c0bf65fd59c72e63326be0bd93550b5b6f9732ee62063aa1822"
       else
       end
     end
