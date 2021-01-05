@@ -10,7 +10,7 @@ class ContainerTools < Formula
     depends_on "cfssl"
 
     def install
-        (bin+"awscontainertools").write <<-EOS
+        (bin+"eks-thw").write <<-EOS
             #!/bin/sh
             echo "EKS The Hard Way Tools installed"
         EOS
