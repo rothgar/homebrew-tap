@@ -16,8 +16,8 @@ class TsvUtils < Formula
 
   def install
     bin.install "bin/csv2tsv"
-    bin.install "bin/keep-header" => "tsv-keep-header"
-    bin.install "bin/number-lines" => "tsv-number-lines"
+    bin.install "bin/keep-header"
+    bin.install "bin/number-lines"
     bin.install "bin/tsv-append"
     bin.install "bin/tsv-filter"
     bin.install "bin/tsv-join"
