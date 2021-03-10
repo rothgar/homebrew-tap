@@ -1,4 +1,4 @@
-class ContainerTools < Formula
+class EksThw < Formula
     desc "Meta Package for EKS The Hard Way"
     version "1.0.0"
     homepage "https://github.com/rothgar/EKS-the-hard-way"
