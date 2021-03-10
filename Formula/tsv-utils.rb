@@ -10,7 +10,7 @@ class TsvUtils < Formula
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/eBay/tsv-utils/releases/download/v#{version}/tsv-utils-v#{version}_linux-x86_64_ldc2.tar.gz"
-      sha256 "7501697b8d42c51ea50c5fc9e36276ff00b8642eae9eff2c4546f65c60cb1c07"
+      sha256 "2fbd9762a4fc3c445d8a6af7663b200ae885fe0d399a461d5b44a648fd778a89"
     end
   end
 
