@@ -1,16 +1,16 @@
 class TsvUtils < Formula
   desc "Utilities for tabular data files"
   homepage "https://github.com/eBay/tsv-utils"
-  version "2.1.1"
+  version "2.2.0"
   bottle :unneeded
 
   if OS.mac?
     url "https://github.com/eBay/tsv-utils/releases/download/v#{version}/tsv-utils-v#{version}_osx-x86_64_ldc2.tar.gz"
-    sha256 "af35f490820d6c1d4044f439560e465e4b1c2288f454cfc0efc3d1aac7ce037e"
+    sha256 "caa97c9bb838130ba824003ac991009819a681e6c824ed93b58ae2bec35252a6"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/eBay/tsv-utils/releases/download/v#{version}/tsv-utils-v#{version}_linux-x86_64_ldc2.tar.gz"
-      sha256 "2fbd9762a4fc3c445d8a6af7663b200ae885fe0d399a461d5b44a648fd778a89"
+      sha256 "f8b1132521ceaa566fee75f4b75a1e0a0ef654fc8f6212fb11d5ec65d427e412"
     end
   end
 
