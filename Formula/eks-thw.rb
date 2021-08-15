@@ -8,6 +8,8 @@ class EksThw < Formula
 
     depends_on "kubernetes-cli"
     depends_on "cfssl"
+    depends_on "awscli"
+    depends_on "disneystreaming/tap/aws-session-manager-plugin"
 
     def install
         (bin+"eks-thw").write <<-EOS
