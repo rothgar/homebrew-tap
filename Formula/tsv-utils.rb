@@ -2,7 +2,6 @@ class TsvUtils < Formula
   desc "Utilities for tabular data files"
   homepage "https://github.com/eBay/tsv-utils"
   version "2.2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/eBay/tsv-utils/releases/download/v#{version}/tsv-utils-v#{version}_osx-x86_64_ldc2.tar.gz"
