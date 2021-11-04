@@ -3,7 +3,6 @@ class K < Formula
   desc "Experimental kubectl wrapper"
   homepage "https://github.com/rothgar/k"
   version "0.3.4"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/rothgar/k/releases/download/0.3.4/k_0.3.4_Darwin_x86_64.tar.gz"
