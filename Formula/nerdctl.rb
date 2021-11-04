@@ -3,7 +3,6 @@ class Nerdctl < Formula
   desc "Package for nerdctl"
   homepage "https://github.com/containerd/nerdctl"
   version "0.11.1"
-  bottle :unneeded
 
   if OS.linux?
     if Hardware::CPU.intel?
