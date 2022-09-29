@@ -20,7 +20,7 @@ class K < Formula
       end
     end
   end
-  
+
   depends_on "kubectl"
 
   def install
