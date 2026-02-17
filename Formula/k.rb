@@ -13,7 +13,7 @@ class K < Formula
 
   on_macos do
     url "https://github.com/rothgar/k/releases/download/v0.4.0/k_0.4.0_Darwin_all.tar.gz"
-    sha256 "cf2011ef9b2a26a8515720000084ae9b2ed22b52101ad599b9bfdf133a8b5df4"
+    sha256 "51bc6bf16a94d4ed269834b2ab57367fa4a2aa64ec753963dd6f711655cf65a8"
 
     def install
       bin.install "k"
@@ -26,7 +26,7 @@ class K < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.4.0/k_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "60919472537617c53123160738adfd0fa23ec3428ba04c1deedfffb13635714c"
+      sha256 "0a2f0fb9f0439bf0cf7b369cba956567291436f0816a5bb389b3c719ac717db6"
       def install
         bin.install "k"
         bash_completion.install "completions/k" => "k"
@@ -36,7 +36,7 @@ class K < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.4.0/k_0.4.0_Linux_armv6.tar.gz"
-      sha256 "7bcf911f06af63ffb3447a155200ebdfb368f0c620d2923402ca811e63d4d250"
+      sha256 "efd7249e717b45550877a40afd5dbf3461f57b931a36bde5293dd4db2f791414"
       def install
         bin.install "k"
         bash_completion.install "completions/k" => "k"
@@ -46,7 +46,7 @@ class K < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.4.0/k_0.4.0_Linux_arm64.tar.gz"
-      sha256 "52b538c20d3d576d345817371947bc8f796556a3bc71444e8909a9e1ee3fc7fa"
+      sha256 "6b8063019fe07af6fa804028817957f42460cc56204c92ef156c69e7aa565bbb"
       def install
         bin.install "k"
         bash_completion.install "completions/k" => "k"
