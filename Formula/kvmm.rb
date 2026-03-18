@@ -4,28 +4,28 @@
 class Kvmm < Formula
   desc "KVM Manager - manage multiple HTTP KVM devices from CLI or web UI"
   homepage "https://github.com/rothgar/kvmm"
-  version "0.2.1"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/rothgar/kvmm/releases/download/v0.2.1/kvmm-darwin-arm64.tar.gz"
-      sha256 "6e547e5f773a52e9f3a4ad467685abc03bf1c520cf399c047578b03171538908"
+      url "https://github.com/rothgar/kvmm/releases/download/v0.2.4/kvmm-darwin-arm64.tar.gz"
+      sha256 "3ff82fa4b84c506afb637c2909ee9f8571262406175232337b6eae8eeffc1360"
     end
     on_intel do
-      url "https://github.com/rothgar/kvmm/releases/download/v0.2.1/kvmm-darwin-amd64.tar.gz"
-      sha256 "6069cc3d2575b81a9f16698dbd948aba94c22e6a695ae00bf6f3c336812fad49"
+      url "https://github.com/rothgar/kvmm/releases/download/v0.2.4/kvmm-darwin-amd64.tar.gz"
+      sha256 "41cb5b8bad0f106bf6d65012ab584f5037e705410ce25ba416e2c5517dc3e007"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rothgar/kvmm/releases/download/v0.2.1/kvmm-linux-arm64.tar.gz"
-      sha256 "1d5ddf3d133fa71fc3e1edfc1345ec93f4b9f7eb9da4487d0f65514b433adea9"
+      url "https://github.com/rothgar/kvmm/releases/download/v0.2.4/kvmm-linux-arm64.tar.gz"
+      sha256 "a8a0e5e056f56d1774910073d920e4be3e8ee92f75c5b7d8e8a6a9c9c7581120"
     end
     on_intel do
-      url "https://github.com/rothgar/kvmm/releases/download/v0.2.1/kvmm-linux-amd64.tar.gz"
-      sha256 "abdd0b2ebcf82f13436399a3a78694caaca5a78014b809cd957e91c4210e2dff"
+      url "https://github.com/rothgar/kvmm/releases/download/v0.2.4/kvmm-linux-amd64.tar.gz"
+      sha256 "81bff299263e2ecbbb257b58c5d8edd471ca25838a28c64f60375effd6c878e5"
     end
   end
 
