@@ -5,17 +5,17 @@
 class K < Formula
   desc "Experimental kubectl wrapper for advanced multi-cluster management"
   homepage "https://github.com/rothgar/k"
-  version "0.4.1"
+  version "0.4.2"
   license "Apache-2.0"
 
   depends_on "kubecolor" => :required
   depends_on "kubectl" => :required
 
   on_macos do
-    url "https://github.com/rothgar/k/releases/download/v0.4.1/k_0.4.1_Darwin_all.tar.gz"
-    sha256 "1b2956bac49e60a3c60fd1b0b9c0a367a47d5d5f4a286533d9b8c3cff2e40dec"
+    url "https://github.com/rothgar/k/releases/download/v0.4.2/k_0.4.2_Darwin_all.tar.gz"
+    sha256 "17fa1ad03d61d9330e1da04958563c42d73cd6ca148a8605cb67bbcbde786092"
 
-    def install
+    define_method(:install) do
       bin.install "k"
       bash_completion.install "completions/k" => "k"
       zsh_completion.install "completions/_k" => "_k"
@@ -25,9 +25,9 @@ class K < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rothgar/k/releases/download/v0.4.1/k_0.4.1_Linux_x86_64.tar.gz"
-      sha256 "c54a5733b702dadeb45a00f2cc04d638af6e4ccbc042eb441d5647e74f3846c4"
-      def install
+      url "https://github.com/rothgar/k/releases/download/v0.4.2/k_0.4.2_Linux_x86_64.tar.gz"
+      sha256 "eb63b2c7079e56f83eaea6463a721032698feb270d0ae8f110a66e34ddaa4167"
+      define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
         zsh_completion.install "completions/_k" => "_k"
@@ -35,9 +35,9 @@ class K < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rothgar/k/releases/download/v0.4.1/k_0.4.1_Linux_armv6.tar.gz"
-      sha256 "6a64d0bc31cfb0e6e965d99593ec1e5e3d8c23bb9d54308d44d65cbfcf104470"
-      def install
+      url "https://github.com/rothgar/k/releases/download/v0.4.2/k_0.4.2_Linux_armv6.tar.gz"
+      sha256 "7723dd6b1e602bbc594ca1caa3bda9ae22c74b0a209b6427df7a5fc205778577"
+      define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
         zsh_completion.install "completions/_k" => "_k"
@@ -45,9 +45,9 @@ class K < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rothgar/k/releases/download/v0.4.1/k_0.4.1_Linux_arm64.tar.gz"
-      sha256 "9e749902b61ab2389ca479fe041c1c9a481a013d176b3a76a1e7a2ed5c9065a9"
-      def install
+      url "https://github.com/rothgar/k/releases/download/v0.4.2/k_0.4.2_Linux_arm64.tar.gz"
+      sha256 "3ec0c1a2b866cb2a51593a59d2b0d7e63a7c072265b4094c931fb40063bb4cef"
+      define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
         zsh_completion.install "completions/_k" => "_k"
