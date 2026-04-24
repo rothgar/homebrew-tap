@@ -12,7 +12,7 @@ class K < Formula
 
   on_macos do
     url "https://github.com/rothgar/k/releases/download/v0.5.0/k_0.5.0_Darwin_all.tar.gz"
-    sha256 "0567abdfae3a67d1c8013e011d7faec78c41c466e68d0b1fef93433849f7fa80"
+    sha256 "82ac47ca5b8116f4358ed6831cdcbdedf64f3e9b513addf444f19176d9f0330b"
 
     define_method(:install) do
       bin.install "k"
@@ -25,7 +25,7 @@ class K < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.5.0/k_0.5.0_Linux_x86_64.tar.gz"
-      sha256 "dc8676d6373e067ae552b2d26be309fda7707efef32253ad2400aa3eaa7628e3"
+      sha256 "4df94f16f648764859b74707455dcb11a09313475fbfb569fa8fb8c02743d9f9"
       define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
@@ -35,7 +35,7 @@ class K < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.5.0/k_0.5.0_Linux_armv6.tar.gz"
-      sha256 "cf4a112d5e99d6a2095d71ba1095ac3548b24508ed40b7e70c03af50e13338d0"
+      sha256 "b8fd89654a1d6423a246cd2cd4ca93b5004f94859eb6929fcf009e80c9731ee7"
       define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
@@ -45,7 +45,7 @@ class K < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rothgar/k/releases/download/v0.5.0/k_0.5.0_Linux_arm64.tar.gz"
-      sha256 "e8ff4964e2b0ba21dae91facea60aad006ec1a1b5d175ca4a35847e51691dabd"
+      sha256 "afd261391eb62cf407af97a7d735777487cfa500031d5c5d2ecb1945f9464bb3"
       define_method(:install) do
         bin.install "k"
         bash_completion.install "completions/k" => "k"
